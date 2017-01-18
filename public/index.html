@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Drivy</title>
-  </head>
-  <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
-      {{#actors}}
-        <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
-        </div>
-      {{/actors}}
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-    <script src="drivy.js"></script>
-    <script src="index.js"></script>
-  </body>
+	<head>
+		<title>CSS/HTML Workshop with Drivy</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<a href="https://www.drivy.com"><div id="logo""></div></a>
+		<div id="titre""></div>
+	
+		<div id="choix">
+			<div id="car">
+				<input class="model" type="text" placeholder="Car model"/>
+				<input class="price-by-day" type="number" placeholder="Price by day"/>
+				<input class="price-by-km" type="number" placeholder="Price by km"/>
+			</div>
+			</br>
+			<div id="rental">
+				<input class="begin" type="date"/>
+				<script type="text/javascript"> calInit("calendarMain", "", "champ_date", "jsCalendar", "day", "selectedDay"); </script>
+				<input class="end" type="date"/>
+				<script type="text/javascript"> calInit("calendarMain", "", "champ_date", "jsCalendar", "day", "selectedDay"); </script>
+				<input class="distance" type="number" placeholder="Distance in km"/>
+				</br></br>
+				<p> Voulez-vous souscrire à l'option ? <input class="option" type="checkbox" placeholder="Deductible option"/></p>
+			</div>
+		</div>
+		
+		<button class="btn" id="compute" onclick="javascript:viewImage('actors');">Compute</button>	
+
+		</br></br>
+		<div id="actors"></div>
+		<script id="template" type="x-tmpl-mustache">
+			{{#actors}}
+				<div class="actor">
+					<span>{{who}}</span>
+					<span>{{type}}</span>
+					<span>{{amount}}</span>
+				</div>
+			{{/actors}}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+		<script src="drivy.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
