@@ -1,36 +1,84 @@
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
-  background-image:url("fd.jpg");
-  background-repeat:no-repeat;
+	width: 100%;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgb(60,70,90);
+	background-color: black;
+	background-image:url("fd.jpg");
+	background-repeat:no-repeat;
+	text-align:center;
 }
 html {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
-h1 {
-  margin-top: 50px;
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
+#titre {
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	background-image:url("titre.png");
+	background-repeat:no-repeat;
+	text-align:center;
 }
+#logo {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image:url("logo.png");
+	background-repeat:no-repeat;
+}
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
+	margin: 0 0 35px;
+	text-transform: uppercase;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 p {
-  margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.5;
+	margin: 0 0 25px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+#choix{
+	margin: auto;
+	margin-top: 10%;
+	width: 50%;
+	padding: 10px;
+	border: 1px solid; 
+	background-color:  rgba(264, 264, 264, 0.5);
+	border-radius: 10px;
+	border-color: #EEEEEE #888888 #888888 #EEEEEE;
+}
+button {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 150%;
+	text-transform: uppercase;
+	width: 150px;
+}
+.btn {
+	color: rgb(60,70,90);
+	border: 1px solid #900;
+	background-color:grey;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+} 
+.btn:hover {
+	color: grey;
+	background: rgb(60,70,90);
+}
+#actors{
+	margin: auto;
+	width: 15%;
+	padding: 10px;
+	border: 1px solid; 
+	background-color:  rgba(264, 264, 264, 0.5);
+	border-radius: 10px;
+	border-color: #EEEEEE #888888 #888888 #EEEEEE;
+	text-align: left;
 }
